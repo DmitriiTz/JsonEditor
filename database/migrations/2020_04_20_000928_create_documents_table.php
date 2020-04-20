@@ -16,7 +16,7 @@ class CreateDocumentsTable extends Migration
         Schema::create('documents', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->enum('status', ['draft', 'published'])->default('draft');
-            $table->json('payload');
+            $table->json('payload')->nullable();
             $table->timestamps();
         });
     }
