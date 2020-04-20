@@ -32,6 +32,6 @@ $factory->define(Document::class, function (Faker $faker) {
     ];
     return [
         'status' => $faker->randomElement($status),
-        'payload' => json_encode($payload)
+        'payload' => $payload
     ];
 });
