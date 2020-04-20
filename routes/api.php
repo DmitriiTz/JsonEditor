@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**
+ * API роуты для управления документами.
+ */
 Route::group(
     ['prefix' => 'v1', 'namespace' => 'Api\v1']
     , function () {

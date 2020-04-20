@@ -16,6 +16,9 @@ use Faker\Generator as Faker;
 |
 */
 
+/**
+ * Создаём генерацию для документов в помощью Faker
+ */
 $factory->define(Document::class, function (Faker $faker) {
     $status = ['draft', 'published'];
     $type = ['quick', 'middle', 'slow'];
